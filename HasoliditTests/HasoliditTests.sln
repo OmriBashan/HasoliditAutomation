@@ -8,15 +8,20 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97B1CED0-1945-4926-85ED-763FCB165118}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		app.config = app.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C74D72FA-DDB6-4CEF-91A3-49C58700174C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C74D72FA-DDB6-4CEF-91A3-49C58700174C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D5DADF02-FD0C-4CD9-A899-39F7B8628B54}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EE3F842B-0437-409D-B220-2D9621208951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{88493E9B-4E3A-4830-9EE8-B07622970E66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions", "Extensions\Extensions.csproj", "{88493E9B-4E3A-4830-9EE8-B07622970E66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{940D00E7-0F8F-4ECA-9897-4DFECBC540F2} = {940D00E7-0F8F-4ECA-9897-4DFECBC540F2}
+		{C74D72FA-DDB6-4CEF-91A3-49C58700174C} = {C74D72FA-DDB6-4CEF-91A3-49C58700174C}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extionsion", "Extionsion", "{2CDF8714-9232-46C9-962A-AF1F51DA1C40}"
 EndProject

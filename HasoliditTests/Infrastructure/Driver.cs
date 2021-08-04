@@ -7,7 +7,7 @@ using OpenQA.Selenium;
 
 namespace Infrastructure
 {
-    class Driver
+   public class Driver
     {
         protected IWebDriver ChromeDriver { get; }
 

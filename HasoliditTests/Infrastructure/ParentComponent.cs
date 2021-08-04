@@ -8,7 +8,7 @@ using OpenQA.Selenium;
 
 namespace Infrastructure
 {
-    class ParentComponent : Driver
+   public class ParentComponent : Driver
     {
         protected IWebElement ParentElement { get; }
         public ParentComponent(IWebDriver driver, IWebElement element) : base(driver)

@@ -7,7 +7,7 @@ using OpenQA.Selenium;
 
 namespace Infrastructure.Components
 {
-    class Topbar:ParentComponent
+    public class Topbar:ParentComponent
     {
         private IWebElement HomeElement => ParentElement.FindElement(By.Id("menu-item-41"));
         private IWebElement StartHereElement => ParentElement.FindElement(By.Id("menu-item-4670"));
@@ -22,6 +22,12 @@ namespace Infrastructure.Components
 
         public Topbar(IWebDriver driver, IWebElement element) : base(driver, element)
         {
+        }
+        public HomePage Search (string text)
+        {
+            SearchElement.SendKeys(text);
+            SearchElement.SendKeys(Keys.Enter);
+            return new HomePage(ChromeDriver);
         }
 
     }

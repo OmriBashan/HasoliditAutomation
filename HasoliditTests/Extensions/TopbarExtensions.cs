@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure;
 
 namespace Extensions
 {
-    class TopbarExtensions
+    public static class TopbarExtensions 
     {
+        public static HomePage SearchQuery (this HomePage page , string text)
+        {
+            return page.TopBarComponent.Search(text);
+        }
     }
 }
